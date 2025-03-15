@@ -27,7 +27,7 @@ a {
 }
 .logoImg {
     padding-top: 0.5em;
-    padding-left: 1em;
+    padding-left: 2.5em;
     height: 70%;
     width: auto;
 }
@@ -73,10 +73,11 @@ main {
 }
 
 #gifts {
-    margin: 1.5em 0;
-    padding: 1.5em;
+    margin: 1em 0;
+    padding: 1em;
     background-color: white;
-    height: 49vh;
+    height: 55vh;
+    
 }
 
 #gifts a {
@@ -85,17 +86,23 @@ main {
     margin: 1.5em;
     font-size: small;
 }
-#gifts p {
+.description {
     font-size:large;
+    display: block;
+}
+#images {
+    display: flex;
 }
 
-.giftImg {
-   
-    height: 75%;
-    width: 24%;
-    border-radius: 18px;
+.imgDiv {
+    width: 25%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
     margin: 5px;
-    box-shadow: 8px 8px 8px rgb(227, 226, 226);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10pc 8px rgb(227, 226, 226); 
+    cursor: pointer; 
 }
 
 .giftImg:hover {
@@ -116,6 +123,10 @@ main {
     font-size: small;
 }
 
+#shopMore {
+    display: flex;
+}
+
 .backTo {
     background-color: #354758 ;
     height: 2.5em;
@@ -133,3 +144,47 @@ main {
     background-color: #222F3E;
     text-align: center;
 }
+
+#shopMore {
+    display: flex;
+    width: 100%;
+}
+
+.subCategory {
+    width: 25%;
+    background-color: white;
+    margin: 0.5em ;
+    flex-wrap: wrap;
+}
+.subCatTitle , .seeMore {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    margin: 1em 0.1em;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon img{
+    object-fit: cover;
+    padding: 0 0.5em;
+    width: 190px;
+    height: 190px;
+    margin: auto;
+}
+
+
+.icon span {
+    padding-left: 0.5em ;
+    padding-top: 1em;
+    font-size: small;
+}
+
